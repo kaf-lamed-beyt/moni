@@ -1,16 +1,99 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
 a {
   color: inherit;
   text-decoration: none;
 }
-
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
+/* global components styles */
+.btn {
+  height: 40px;
+  width: 180px;
+  border: none;
+}
+.btn--rounded-lg {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+}
+.btn--rounded-md {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.btn--rounded-sm {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+}
+.btn--ghost {
+  background: var(--ghost);
+  color: var(--primary);
+}
+.card {
+  height: 150px;
+  padding: 14px;
+  border-radius: 4px;
+  background: var(--ghost);
+  color: var(--primary);
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.05);
+  margin: 12px 0;
+}
+.btn--primary,
+.card--primary {
+  background: var(--primary);
+  color: var(--default);
+}
+.head-root {
+  height: 60px;
+  width: 100%;
+  background: var(--primary);
+  text-align: center;
+  padding: 15px;
+  color: var(--default);
+  text-transform: capitalize;
+  font-size: 23px;
+  font-weight: 400;
+}
+.root-footer {
+  height: 100%;
+  padding: 16px;
+  text-align: center;
+  background: var(--primary);
+  color: var(--default);
+}
+.root-footer a {
+  text-decoration: underline;
+}
+.form-control {
+  height: 50px;
+  width: 100%;
+  border: 1px solid var(--input-ghost);
+  background: var(--ghost);
+  border-radius: 3px;
+  padding: 0 10px;
+  outline: none;
+}
+.form-control::placeholder {
+  font-size: 16px;
+}
+.form-control:focus {
+  border: 1px solid var(--primary);
+}
+.controls {
+  margin: 0 12px 12px 0;
+}
+
+@media only scren and (max-width: 768px) {
+  .btn {
+    width: 100%;
+  }
+  .form-control {
+    width: 100%;
+  }
+}
+/* global components style ends here */
