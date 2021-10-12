@@ -1,0 +1,91 @@
+.root {
+  min-height: 82vh;
+}
+.root button {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+.root button svg {
+  font-size: 26px;
+}
+.amount .h1 {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 100px;
+  font-weight: bolder;
+  color: var(--primary);
+  margin-top: -1%;
+  text-align: center;
+  font-size: 45px;
+  background: var(--ghost);
+}
+.amount .h1::placeholder {
+  text-align: center;
+  font-size: 45px;
+  padding: 10px 0;
+  font-weight: bolder;
+  color: var(--primary);
+}
+.resultRoot {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 800px;
+  margin-top: 2%;
+  margin-bottom: 7%;
+}
+.resultRoot div {
+  width: 46%;
+}
+.inwords .title,
+.amount .title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+}
+.inwords .translated {
+  font-size: 18px;
+  padding-top: 25px;
+}
+.inputRoot {
+  height: 60px;
+  margin: 0 auto;
+  width: 800px;
+  display: flex;
+  justify-content: space-evenly !important;
+  margin-top: 7%;
+}
+.currencies {
+  border: 1px solid var(--input-ghost);
+  width: 100%;
+  height: 50px;
+  border-radius: 3px;
+  background: var(--ghost);
+  padding: 0 10px;
+}
+.currencies:focus {
+  border: 1px solid var(--primary);
+  outline: none;
+}
+@media only screen and (max-width: 768px) {
+  .resultRoot,
+  .inputRoot {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .resultRoot {
+    margin-bottom: 0;
+  }
+  .resultRoot div {
+    width: 100%;
+  }
+  .inputRoot {
+    margin-top: 3%;
+  }
+}
